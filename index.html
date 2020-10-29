@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+
+        <link rel="stylesheet" type="text/css" href="styles.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    </head>
+
+    <body>
+        <div class="box-shadow">
+            <div class="main-nav">
+                <span class="navbar">
+                    <div class="title-div">
+                        <div class="title">
+                            <img class="logo" src="Images/logo.png">
+                            <span class="logo-txt">Game Development</span>
+                        </div>
+                    </div>
+                    
+                    <div class="nav-space"></div>
+
+                    <div  class="btns">
+                        <a class="button" href="index.html">Home</a>
+                            <div class="spacer-btn"></div>
+                        <a class="button" href="PL.html">Programming Languages</a>
+                            <div class="spacer-btn"></div>
+                        <a class="button" href="GE.html">Game Engines</a>
+                            <div class="spacer-btn"></div>
+
+                        <div class="dropdown">
+                            <span class="button">More ↓</span>
+
+                            <div class="dropdown-content">
+                                <a class="button" href="3d.html">3d Modeling Software</a>
+                                <a class="button" href="VS.html">Visual Studio Code</a>
+                                <a class="button" href="MP.html">Music Production</a>
+                                <a class="button" href="LG.html">Launching Your Game</a>
+                            </div>
+                        </div>
+
+                        <div class="spacer-btn"></div>
+
+                    </div>
+
+                </span>    
+            </div>
+    
+            <div class="spacer0"></div>
+
+            <header class="main-header">
+                <span class="title-text">Game</span>
+                <span class="title-text">Development</span>
+            </header>
+    
+            <div class="spacer"></div>
+    
+            <div class="slider-body">
+                <div class="slider">
+                    <div class="slides">
+                        <input type="radio" name="radio-button" id="radio1">
+                        <input type="radio" name="radio-button" id="radio2">
+                        <input type="radio" name="radio-button" id="radio3">
+                        <input type="radio" name="radio-button" id="radio4">
+        
+        
+                        <div class="slide-first">
+                            <img src="images/VSC.png">
+                        </div>
+                        <div class="slide">
+                            <img src="images/BC.jpg">
+                        </div>
+                        <div class="slide2">
+                            <img src="images/B.jpg">
+                        </div>
+                        <div class="slide3">
+                            <img src="images/T3.jpg">
+                        </div>
+        
+                        <div class="automatic-nav">
+                            <div class="auto-btn-1"></div>
+                            <div class="auto-btn-2"></div>
+                            <div class="auto-btn-3"></div>
+                            <div class="auto-btn-4"></div>
+                        </div>
+                    </div>
+        
+                    <div class="manual-nav">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="holder">
+                <div  class="content-tab">
+                    <span>Game Development: The process of developing a playable video game.</span>
+                </div>
+            </div>
+            
+            <div class="img-row">
+                <div class="img-col">
+                    <img class="img-small" src="Images/RS.png">
+                    <span class="img-txt">Rockstar Games</span>
+                </div>
+                <span class="img-spacer"></span>
+                <div class="img-col">
+                    <img class="img-small" src="Images/GG2.png">
+                    <span class="img-txt">Garage Games</span>
+                </div>
+            </div>
+    
+            <div class="holder">
+                <div  class="content-tab">
+                    <span>There are many game development companies out there these days. Many however, started as indie game development companies. These are companies that usually consist of a small group of developers and who usually form for the creation of one game. These games are not usually as big as the mainstream titles.
+                    </span>
+                </div>
+            </div>
+            
+            <div class="spacer2"></div>  
+
+        </div>
+
+        <!-- script stuff for img slider -->
+
+        <script type="text/javascript">
+            var counter = 1
+            setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter > 4){
+                counter  = 1;
+            }
+            }, 5000);
+        </script>
+
+
+    </body>
+
+</html>
